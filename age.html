@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+</head>
+
+<body>
+
+    <input type="text" id="num">
+    <input type="submit" value="calcular" onclick="age();">
+    <hr>
+    <label id="lblName"></label>
+
+   
+</body>
+
+<script>
+    function age() 
+    {
+        var year  = document.getElementById("num").value;
+        year = parseInt(year);
+        var edad = 2020-year;
+        document.getElementById('lblName').innerHTML = 'Edad' + edad;
+        alert('edad :' + edad);
+    }
+</script>
+
+
+</html>
